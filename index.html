@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Mood Matcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="title"><i class="fas fa-film"></i> Movie Mood Matcher</h1>
+            </div>
+            <div class="card-content">
+                <h3 class="subtitle">How are you feeling today?</h3>
+                <div class="mood-grid" id="moodGrid">
+                    <!-- Moods will be inserted here by JavaScript -->
+                </div>
+
+                <div id="movieSection" class="movie-section hidden">
+                    <h3 class="recommendation-title">Recommended for <span id="selectedMood"></span> mood:</h3>
+                    <div id="loadingSpinner" class="loading-spinner hidden">
+                        <div class="spinner"></div>
+                    </div>
+                    <div id="movieGrid" class="movie-grid">
+                        <!-- Movies will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
