@@ -14,11 +14,16 @@
                 <h1 class="title"><i class="fas fa-film"></i> Movie Mood Matcher</h1>
             </div>
             <div class="card-content">
+                <!-- API Warning Message -->
+                <div id="apiWarning" class="api-warning">
+                    <i class="fas fa-exclamation-triangle"></i> 
+                    Don't forget to add your Gemini API key in the script.js file!
+                </div>
+                
                 <h3 class="subtitle">How are you feeling today?</h3>
                 <div class="mood-grid" id="moodGrid">
                     <!-- Moods will be inserted here by JavaScript -->
                 </div>
-
                 <div id="movieSection" class="movie-section hidden">
                     <h3 class="recommendation-title">Recommended for <span id="selectedMood"></span> mood:</h3>
                     <div id="loadingSpinner" class="loading-spinner hidden">
